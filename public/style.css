@@ -163,7 +163,12 @@ main {
     .footer {
         display: none;
     }
-    
+    .fb-link {
+        background-color: rgba(13, 13, 92, 0.8);
+        color: #eee;
+        padding: 1rem 3rem;
+        border-radius: 1rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
