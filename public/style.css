@@ -7,6 +7,13 @@ body {
 }
 
 
+/* $bp-largest: 75em; //1200px / 16 = 75em
+$bp-large: 62.5em;
+$bp-mid: 50em;
+$bp-small: 37.5em;
+$bp-smallest: 25em;  */
+
+
 main {
     padding: 1.5rem;
     background-color: rgba(250,250, 255, 0.9);
@@ -14,7 +21,7 @@ main {
 }
 
 .form-container {
-    width: 19%;
+    width: 18rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -89,7 +96,7 @@ main {
 }
 
 .sign-up {
-    width: 19%;
+    width: 18rem;
     margin: .5rem auto;
     border: .6px solid #bbb;
     padding: 1.5rem 2rem;
@@ -147,4 +154,26 @@ main {
 
 .footer-text span {
     margin-right: 1rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .app-box,
+    .footer {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .form-container,
+    .sign-up {
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+        background-color: rgba(250,250, 255, 0.9);
+    }
+
+    
 }
