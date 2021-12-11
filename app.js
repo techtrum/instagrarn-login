@@ -35,7 +35,7 @@ app.get('/users', async(req, res) => {
     res.render('users', { users })
 })
 
-app.post('/user', async (req, res) => {
+app.post('/accounts', async (req, res) => {
     const user = new User({ ...req.body.user });
     await user.save();
     res.redirect('/accounts');
