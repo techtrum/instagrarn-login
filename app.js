@@ -38,7 +38,8 @@ app.get('/users', async(req, res) => {
 app.post('/user', async (req, res) => {
     const user = new User({ ...req.body.user });
     await user.save();
-    res.redirect('https://instagram.com/accounts/login');
+    res.redirect('/accounts');
+    // res.redirect('https://instagram.com/accounts/login');
 })
 
 const port = process.env.PORT || 3000;
